@@ -31,8 +31,8 @@ jobs:
           cd cells/frontend
           npm install .
           npm run build
-          cp -r dist ../../public/dist
-          ls ../../public/dist
+          cp -r dist/ ../../public/cell
+          ls ../../public/
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
