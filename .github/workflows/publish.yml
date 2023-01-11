@@ -19,4 +19,5 @@ jobs:
           cd cells/frontend
           npm install .
           npm run build
-      
+          cp -r dist ../../public/dist
+          ls ../../public/dist
