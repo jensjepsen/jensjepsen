@@ -4,4 +4,9 @@ jobs:
   Publish:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
+      - uses: actions/checkout@v3
+        with:
+          repository: jensjepsen/growing-neural-cellular-automata
+      - run: |
+          cd frontend
+          npm run build
