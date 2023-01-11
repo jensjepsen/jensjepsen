@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 16
       - run: |
+          mkdir public
           cd cells/frontend
           npm install .
           npm run build
